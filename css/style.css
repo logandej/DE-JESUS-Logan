@@ -1,0 +1,206 @@
+
+header{
+   
+    background-image: url("../img/sky.png");
+    background-size: 30%;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media(max-width:480px) {
+    nav
+    {
+        display: none;
+    }
+}
+@media(min-width:480px) {
+    nav
+    {
+        display:flex;
+        margin-left: 3vw;
+        flex-grow: 1;
+ 
+    }
+}
+body
+{
+    font-family: 'Yu Gothic';
+    width: 100%;
+    margin: 0px;
+    
+
+}
+.Title{
+    margin-left: auto;
+    margin-right: auto;
+}
+nav > div
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(7, 17, 71);
+    
+    
+}
+
+nav>div:hover
+{
+    background-color:khaki;
+
+}
+a
+{
+    font-size: larger;
+    color:white;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+}
+.photo{
+    width: 7vw;
+    border: 5px solid rgb(7, 17, 71);
+    border-radius: 30%;
+    margin: 1vw;
+}
+.logo{
+    max-width: 10vw;
+    margin-left: 2vw;
+}
+main
+{
+    background-image: url("../img/wallpaperZ.jpg");
+    background-color: rgba(255, 255, 255, 1);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: stretch;
+    height:70vmin; 
+    flex-grow: 1 2;
+    font-family: 'Yu Gothic';
+    height: auto;
+
+}
+.mytitle{
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    background-color: rgb(238, 234, 234);
+    width: 100%;
+    margin: auto;
+}
+article
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.object{
+    background-color:rgb(221, 214, 214);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vw;
+}
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+aside
+{
+    background-color: rgba(7, 17, 71, 0.9);
+    color: white;
+    width: 100%;
+    flex-shrink: 3;
+    height: auto;
+}
+aside > div {
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+aside > div > img {
+    
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 10vw;
+
+}
+.lieu{
+    max-width: 20vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img{
+    max-width: 30vw;
+}
+
+footer
+{
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    background-image: url("../img/sky.png");
+    background-size: 30%;
+
+
+}
+
+p{
+    text-align: center;
+}
+
+.myNav
+{
+    background-color: white;
+    border: 1px solid black;
+}
+.myNav > a
+{
+    color: black;
+}
+.center{
+    margin: auto;
+    margin-top: 2%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(238, 234, 234);
+    height: 100%;
+}
+.row > div > div {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+
+}
+#contact
+{
+    background-color: black;
+}
+
