@@ -116,13 +116,27 @@ article
     align-items: center;
     justify-content: center;
     margin-bottom: 3vw;
+
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+   
+}
+.object:hover{
+    border-top: 1px solid rgb(7, 17, 71);
+    border-bottom: 1px solid rgb(7, 17, 71);
+
 }
 .gallery{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
+.gallery > img {
+    margin: 5px;
+    
+} 
 aside
 {
     background-color: rgba(7, 17, 71, 0.9);
@@ -203,4 +217,21 @@ p{
 {
     background-color: black;
 }
+
+.myanim {
+    width: 5vw;
+    position: relative;
+    animation-name: example;
+    animation-duration: 10s;
+   animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+   
+    50%  { left:70%; top:0px;}
+  
+    100% { left:0px; top:0px;}
+  }
+
 
