@@ -213,8 +213,10 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(238, 234, 234);
+    background-color: rgb(49, 49, 49);
     height: 100%;
+    width: 100%;
+    color: white;
 }
 .row > div > div {
     margin-top: 1vw;
