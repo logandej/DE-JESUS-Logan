@@ -187,14 +187,6 @@ aside > div {
     margin-left: 10px;
     margin-right: 10px;
 }
-aside > div > img {
-    
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    max-width: 10vw;
-
-}
 .lieu{
     max-width: 20vw;
     margin-right: auto;
