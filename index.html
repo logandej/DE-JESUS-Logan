@@ -13,6 +13,12 @@
     </head>
         
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+        $(".loader").fadeOut("1000");
+        $(".loaderBack").fadeOut("1000"); })
+    </script>
 	<body onload="start()">
         <header>
             <img alt="img" class="photo" src="img/photo2.jpg">
@@ -34,6 +40,7 @@
          
           
         </header>
+        <div class="loaderBack"> <div class="loader"> <div class="loader"> <div class="loader"></div></div></div></div>
 	    <main id="home">
             <article>
                 <div>

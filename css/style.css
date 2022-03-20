@@ -192,6 +192,28 @@ aside > div {
     margin-right: auto;
     margin-left: auto;
 }
+.loaderBack{
+    position: fixed;
+    background-color:gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.loader {
+    /* Finally, a use for "groove"! */
+    left: 50%;
+    border: 24px groove rebeccapurple;
+    display: table-cell;
+    border-radius: 999px;
+    animation: spin 5s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+  }
 
 img{
     max-width: 20vw;
