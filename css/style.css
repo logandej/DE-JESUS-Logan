@@ -1,7 +1,7 @@
 
 header{
    
-    background-image: url("../img/sky.png");
+    background-color: rgb(206, 206, 206);
     background-size: 30%;
     height: auto;
     display:flex;
@@ -76,7 +76,6 @@ a
 main
 {
     background-image: url("../img/wallpaperZ.jpg");
-    
     background-attachment: fixed;
     display: flex;
     flex-direction:row;
@@ -87,6 +86,32 @@ main
     font-family: 'Yu Gothic';
     height: auto;
 
+}
+
+input[type="button"]{
+    font-size: 1vw;
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid rgb(12, 11, 11);
+    border-radius: 30px;
+    
+}
+
+input[type="button"]:hover{
+    border-color: white;
+    color: white;
+    background: linear-gradient(-45deg, #12025a, #8a0707, #03014e, #800000);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+input[type="button"]:focus{
+    color: white;
+    background: linear-gradient(-45deg, #12025a, #630a03, #03014e, #5f5e03);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
 }
 .mytitle{
     align-items: center;
@@ -105,14 +130,12 @@ article
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-
-
 
 }
 article > div {
     margin-bottom: 3vw;
 }
+
 .object{
     
     width: 100%;
@@ -133,8 +156,8 @@ article > div {
 }
 
 .object:hover{
-    border-top: 3px solid rgb(129, 8, 4);
-    border-bottom: 3px solid rgb(129, 8, 4);
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
 
 }
 
@@ -188,7 +211,7 @@ footer
     width: 100%;
     left: 0;
     text-align: center;
-    background-image: url("../img/sky.png");
+    background-color: rgb(206, 206, 206);
     background-size: 30%;
 
 
@@ -242,7 +265,7 @@ p{
     
     padding: 20%;
     margin: 20%;
-    background-color: rgba(0, 0, 0, 0.8);
+  
     color: white;
     border: 5px solid white;
     border-radius: 30px;
@@ -283,4 +306,29 @@ p{
 .download:hover{
     background-color: rgb(129, 8, 4) ;
     border-radius: 30px;
+}
+
+.available{
+    display: flex;
+}
+.disabled{
+   display: none;
+}
+
+#effect {
+    background: linear-gradient(-45deg, #12025a, #630a03, #03014e, #5f5e03);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: white;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -6,26 +6,38 @@
       <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="Bienvenue sur la page de Logan De Jesus !">
+      <script type="text/javascript" src="js/script.js" defer></script>
       <title>Logan De Jesus</title>
       
       
     </head>
-	<body>
-        <header id="top_page">
+        
+
+	<body onload="start()">
+        <header>
             <img alt="img" class="photo" src="img/photo2.jpg">
             <h2>DE JESUS Logan</h2>
-            <nav>
+            <!--<nav>
                 <div class="myNav"><a href="./index.html">Accueil</a></div>
                 <div><a href="./page_2.html">Mes Projets</a></div>
                 <div><a href="./page_1.html">Mes Jeux</a></div>
                 <div><a href="./a_propos.html">A propos</a></div>
+            </nav>-->
+            <nav>
+                <input type="button" value="Accueil" onclick="changePage(home)">
+                <input type="button" value="Mes Jeux" onclick="changePage(myGames)">
+                <input type="button" value="Projets" onclick="changePage(projets)">
+                <input type="button" value="Infos" onclick="changePage(infos)">
+
+               
             </nav>
+         
           
         </header>
-	    <main>
+	    <main id="home">
             <article>
-                <div  style="background: url(img/Blue-Galaxy.jpg); background-size: 100%; background-attachment: fixed;">
-                <div class="object"  class="objectEnd" >
+                <div>
+                <div class="object"  class="objectEnd" id="effect">
                   
                     <p>Bonjour et bienvenue sur mon EportFolio, Je suis étudiant à l'université de Montpellier en 2e année de DUT 
                         informatique. Je suis passionné de jeux vidéo depuis toujours. Vous trouverez donc sur mon site toutes les informations
@@ -43,11 +55,6 @@
                     <p>Je réalise des jeux en VR aussi :D</p>
                  </div>
                  </div>
-                
-
-                   
-                
-                
 
                 <!--<p class="Title">Mes Centres d'Interêts</p>
                 <div class="object">
@@ -77,10 +84,207 @@
                 </div>-->
 
             </article>
+        </main>
+
+        <main id="myGames">
            
+            <article>
+              
+
+                <div  style="background: url(img/jeux/l10.png); background-size: 100%; background-attachment: fixed;">
+                <div class="object">
+                    <h1 id="bullet">Lost And Alone</h1>
+                    <p><u>Date :</u> 2021 <u>Prix :</u> Gratuit</p>
+                    <p>Lost And Alone est un jeu d'aventure dans lequel vous devez explorer et résoudre des énigmes. Je l'ai développé en majorité seul sur Unity. Mon frère 
+                        m'a aidé à réaliser les models 3D des différents vaisseaux
+                    </p>
+                    <h3>Histoire :</h3>
+                    <p>Vous commencez le jeu en tant que capitaine de vaisseau spatial et vous êtes nombreux à quitter la planète car une catastrophe s'est produite.
+                         Malheureusement, votre vaisseau spatial a un gros problème et vous perdez son contrôle, impossible à maneuvrer, vous tombez dans le coma. 
+                         Lorsque vous vous réveillez, vous vous rendez compte que vous avez perdu le groupe et que vous êtes seul. 
+                         Votre mission est de les retrouver car vous ne voulez pas être abandonné et vous avez besoin de leur aide.
+                    </p>
+                    <div class="gallery">
+                        <img alt="img" src="img/jeux/l3.png">
+                        <img alt="img" src="img/jeux/l7.png">
+                        <img alt="img" src="img/jeux/l9.png">
+                        <img alt="img" src="img/jeux/l5.png">
+                        <img alt="img" src="img/jeux/l10.png">
+                        
+                    </div>
+                   
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5bC3PRibWQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <a href="https://www.youtube.com/watch?v=gaLZs5YgUXs"><h5  class="download" id="bullet">Bande Annonce</h5></a>
+                    <a href="https://logandej.itch.io/lost-and-alone"><h5  class="download" id="bullet">Télécharger le jeu</h5></a>
+                </div>
+                </div>
+
+                <div style="background: url(img/jeux/3nw.png); background-size: 100%; background-attachment: fixed;">
+                <div class="object"  class="objectEnd">
+                    <h1 id="bullet">Ninja War</h1>
+                   <p><u>Date :</u> 2020 <u> Prix : </u>  Gratuit</p>
+                     
+                   
+                    
+                    <p>Ninja War est jeu que j'ai développé sur Unity commencé en 2020 que j'ai réalisé seul. Il s'agit d'un petit défi dans lequel vous devez finir le
+                        le plus vite possible le jeu aprés avoir éliminé tous les ennemis.
+                    </p>
+                    <h3>Histoire :</h3>
+                    <p>Apres l'invasion sur votre Terre de nouvelles technologies, des robots surveillent les plaines et ne veulent empêcher l'espèce humaine
+                        de nuire à leur espèce. Vous incarnez un ninja accompagné de son gentil robot Bobby qui implémente quelques nouvelles technologies. Vous
+                        devez détruire au plus vite les 21 robots grâce à votre katana et vos shurikens.
+                    </p>
+                    <div class="gallery">
+                        <img alt="img" src="img/jeux/3nw.png">
+                        <img alt="img" src="img/jeux/6nw.png">
+                        <img alt="img" src="img/jeux/8nw.png">
+                        <img alt="img" src="img/jeux/9nw.png">
+                    </div>
+                    <a href="https://logandej.itch.io/ninja-war"><h5 id="bullet"  class="download">Télécharger le jeu</h5></a>
+                </div>
+                </div>
+
+               
+            </article>
+
+        </main>
+
+        <main  id="projets">
+            
+            <article>
+                <div  style="background: url(img/sunken/1.png) center center; background-size: 100%; background-attachment: fixed;">
+                <div class="object">
+                    <h2 id="bullet">Code Game Jam 2022</h2>
+                    <p>
+                        La Code Game Jam est un concours en équipe réalisé à Montpellier où il faut créer un jeu vidéo en 30 heures.
+                        C'est avec beacoup de travail sur Unity que notre groupe de 6 étudiants à remporté le prix du public ainsi que le prix design.
+                        Nous n'avons pas pu gagner la première place car nous ne pouvions pas avoir tous les prix (Réponse du jury).
+
+                        <a href="http://codegamejam.extragames.fr/editions-precedentes/edition-5-chasse-aux-tresors/">Code Game Jam 2022</a>
+                    </p>
+                    <div class="gallery">
+                        <img alt="img" src="img/sunken/1.png">
+                        <img alt="img" src="img/sunken/2.png">
+                        <img alt="img" src="img/sunken/3.png">
+                        <img alt="img" src="img/sunken/4.png">
+                        <img alt="img" src="img/sunken/5.png">
+                        <img alt="img" src="img/sunken/6.png">
+                        <img alt="img" src="img/sunken/7.png">
+                    </div>
+                    <a href="https://aquentin.itch.io/sunken-memories"><h5  class="download" id="bullet">Télécharger le jeu</h5></a>
+                    
+                </div>
+                </div>
+
+                <div  style="background: url(img/TheGoldenOdyssey/go6.png) center center; background-size: 100%; background-attachment: fixed;">
+                <div class="object">
+                    <h2 id="bullet">Code Game Jam 2021</h2>
+                    <p>
+                        La Code Game Jam est un concours en équipe réalisé à Montpellier où il faut créer un jeu vidéo en 30 heures.
+                        C'est avec beacoup de travail sur Unity que notre groupe de 6 étudiants à remporté la première place ainsi que le prix public.
+
+                        <a href="http://codegamejam.extragames.fr/editions-precedentes/edition-5-chasse-aux-tresors/">Code Game Jam 2021</a>
+                    </p>
+                    <div class="gallery">
+                        <img alt="img" src="img/TheGoldenOdyssey/go1.png">
+                        <img alt="img" src="img/TheGoldenOdyssey/go2.png">
+                        <img alt="img" src="img/TheGoldenOdyssey/go3.png">
+                        <img alt="img" src="img/TheGoldenOdyssey/go4.png">
+                        <img alt="img" src="img/TheGoldenOdyssey/go5.png">
+                        <img alt="img" src="img/TheGoldenOdyssey/go6.png">
+                                        
+                    </div>
+                    <a href="https://aquentin.itch.io/the-golden-odyssey"><h5  class="download" id="bullet">Télécharger le jeu</h5></a>
+
+                </div>
+                </div>
+
+                <div  style="background: url(img/stuum.png)  ; background-size: 100%; background-attachment: fixed;">
+                    <div class="object">
+                        <h2 id="bullet">STUUM site de vêtement en ligne</h2>
+                        <p>
+                            
+                           J'ai réalisé en équipe de 3 étudiants un site de textile  programmé en PHP, SQL, HTML et CSS
+                            pour un projet de mon cursus DUT informatique. Il simule donc un vrai site de vêtements
+                            que vous pouvez "achteter". Les designs des tee-shirts, pulls et casquettes ont été dessinés par 
+                            mon frère.
+    
+                        </p>
+                        <a href="https://webinfo.iutmontp.univ-montp2.fr/~machua/eCommerce/index.php?action=readAll&controller=groupe&classe=22">STUUM-Accueil</a>
+                    </div>
+                    </div>
+
+                <div  style="background: url(img/ndi2.png)  ; background-size: 100%; background-attachment: fixed;">
+                <div class="object">
+                    <h2 id="bullet">Nuit de l'info 2021</h2>
+                    <p>
+                        
+                       Pour ce concours national, en équipe de 6, nous devons réaliser un site Web en 1 nuit.
+                       Le thème de cette année était de faire un site qui regroupe les sauvetages en mers par les Dunkerquois SNSM.
+                       Nous avons utilisé le PHP. Nous avons remporté différents défis comme réaliser un système de notifiction sur téléphone.
+                       Nous avons remporté la 1ere place sur 420 équipes de France. Quelle joie !
+
+                    </p>
+                    <a href="https://webinfo.iutmontp.univ-montp2.fr/~arzalierq/NDI/">Sauvetages du Dunkerquois</a>
+                </div>
+                </div>
+
+                
+                <div class="object">
+                    <h2 id="bullet">Nuit de l'info 2020</h2>
+                    <p>
+                       La nuit de quoi ?
+
+                    </p>
+                </div>
+                
+
+                
+                <div class="object" class="objectEnd">
+                    <h2 id="bullet">Concours Robotique</h2>
+                    <p>
+                       J'étais en cinquième au collège et j'ai pris des cours en plus où l'on pouvait créer des robots avec des legos et les programmer.
+                      
+                       
+                    </p>
+                </div>
+               
+
+            </article>
 
 
         </main>
+
+        <main id="infos">
+            <aside>
+ 
+             <embed src="img/CV Logan Stage.pdf " width="500" height="700" type="application/pdf"/>
+                <a href="img/CV Logan Stage.pdf" download="pdf">
+                 <button type="button">Télécharger CV</button>
+                </a>
+             
+            </aside>
+             <article>
+                
+                 <div class="row">                   
+                         <div>
+                             <div><u>Nom:</u> DE JESUS </div>
+                             <div><u>Pénom:</u> Logan </div>
+                             <div><u>Age:</u> 19 </div>
+                             <div><u>Date de naissance:</u> 03/10/2002 </div>
+                             <div><u>Pays:</u> France </div>
+                             <div><u>Ville:</u> Montpellier </div>
+                         </div>                
+                         <div>
+                             <div><u>Téléphone:</u> 07 82 43 36 76 </div>
+                             <div><u>Mail:</u> logan.dejesus1@gmail.com </div>
+                             <div><u>Adresse:</u> <a href="https://goo.gl/maps/vf1WxMVVuZocT63C6">5 impasse Montesquieu Le Crès (34920)</a> </div>
+                         </div>
+                 </div>
+             </article>
+             </main>
+
+
+
         <footer>
             <a href="https://github.com/logandej?tab=repositories"><img id="logo" src="img/github.png" alt="github"></a>
             <a href="https://www.linkedin.com/in/logan-de-jesus-606b0a172/"><img id="logo" src="img/linkedin.png" alt="linkedin"></a>
