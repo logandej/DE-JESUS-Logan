@@ -346,3 +346,7 @@ p{
         background-position: 0% 50%;
     }
 }
+
+a:hover, input{
+    cursor: pointer;
+}
