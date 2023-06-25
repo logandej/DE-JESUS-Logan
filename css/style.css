@@ -85,7 +85,15 @@ main
     flex-grow: 1 2;
     font-family: 'Yu Gothic';
     height: auto;
+    
+    overflow-x: hidden;
 
+}
+
+.buttonPlus{
+    
+    padding-left:2px;
+    padding-right:2px;
 }
 
 input[type="button"]{
@@ -103,7 +111,7 @@ input[type="button"]{
 input[type="button"]:hover{
     border-color: white;
     color: white;
-    background: linear-gradient(-45deg, #12025a, #8a0707, #03014e, #800000);
+    background: linear-gradient(-45deg, #025a06, #dcc10d, #099dd3, #8c0c90);
     background-size: 400% 400%;
     animation: gradient 1s ease infinite;
 }
@@ -136,21 +144,20 @@ article > div {
     margin-bottom: 3vw;
 }
 
-.object{
-    
-    width: 100%;
+.object {
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
-   
-}
+    overflow-x: hidden;
+  }
+
 .objectEnd{
     margin-bottom: 0vw;
 }
@@ -161,16 +168,34 @@ article > div {
 
 }
 
-.gallery{
+.gallery {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     
-}
-.gallery > img {
+  }
+  
+  .gallery > div {
+    flex-basis: 20%;
     margin: 5px;
-    
+  }
+  
+  .gallery > div > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  
+    max-height: calc(100vw * 9 / 16); /* Hauteur maximale pour un ratio d'aspect de 16:9 */
+  }
+
+  
+.gallery > img {
+    width: 20%;
+    max-width: 20%;
+    margin: 5px;
+    height: auto;
+    object-fit: cover;
 } 
 aside
 {
@@ -222,8 +247,8 @@ img{
 footer
 {
     position: relative;
+    bottom: 0;
     width: 100%;
-    left: 0;
     text-align: center;
     background-color: rgb(206, 206, 206);
     background-size: 30%;
