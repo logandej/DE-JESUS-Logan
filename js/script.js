@@ -25,7 +25,7 @@ function afficher(elem){
 
 function changePage(elem){
 
-    cacher(more);
+    //cacher(more);
     cacher(home);
     cacher(myGames);
     cacher(projets);
@@ -33,6 +33,9 @@ function changePage(elem){
 
     afficher(elem);
 
+
+
+    
 
 }
 
